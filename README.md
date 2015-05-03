@@ -1,2 +1,2 @@
 # emberjs-tutorial
-finished project for http://youtu.be/_vf8NYFdvvw
+finished project for https://www.youtube.com/watch?v=wFKml45MIAE
