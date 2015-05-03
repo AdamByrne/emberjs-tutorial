@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Ember Tutorial</title>
+    <link rel="stylesheet" href="http://bootswatch.com/lumen/bootstrap.min.css">
+  </head>
+  <body class="container-fluid">
+    
+    
+    <script type="text/x-handlebars">
+      <div class="jumbotron container text-center">
+        <ul class="nav nav-pills text-centered container">
+          <li>{{#link-to 'about'}}About{{/link-to}}</li>
+          <li>{{#link-to 'list'}}List{{/link-to}}</li>
+          </ul>
+          <hr/>
+      <div class="container text-center">{{outlet}}</div>
+      </div>
+    </script>
+    
+    <script type="text/x-handlebars" data-template-name="about">
+      <h1>About</h1>
+      <p>This is the about page for another screencast tutorial</p>
+    </script>
+    <script type="text/x-handlebars" data-template-name="list">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span class="badge">12</span>
+          Eggs
+        </li>
+        <li class="list-group-item">
+          <span class="badge">2 litres</span>
+          Milk
+        </li>
+        <li class="list-group-item">
+          <span class="badge">2kg</span>
+          Flour
+        </li>
+      </ul>
+    </script>
+    
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/handlebars.js"></script>
+    <script src="http://builds.emberjs.com/release/ember.min.js"></script>
+    <script src="http://builds.emberjs.com/release/ember-template-compiler.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
